@@ -77,6 +77,10 @@ function fahrenheit() {
 
   // WRITE YOUR EXERCISE 4 CODE HERE
 
+  let cels = ((fahr - 32) * 0.55555555556).toFixed(2)
+  var exercise4 = document.getElementById("output4")
+  exercise4.innerHTML = fahr + " degrees Fahrenheit equals " + cels + " degrees Celsius."
+
   ///////////////////////////// DO NOT MODIFY
   check("fahrenheit", fahr); // DO NOT MODIFY
   ///////////////////////////// DO NOT MODIFY
@@ -100,6 +104,8 @@ function inches() {
   ////////////////////// DO NOT MODIFY
 
   // WRITE YOUR EXERCISE 5 CODE HERE
+
+  let yards = math.Floor(inches / 63360) 
 
   ////////////////////////// DO NOT MODIFY
   check("inches", input); // DO NOT MODIFY
