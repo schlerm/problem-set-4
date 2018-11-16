@@ -258,9 +258,9 @@ function change() {
   let dimes = Math.floor((amount - (quarters*.25))/.1);
   let nickels = Math.floor((amount - (quarters*.25) - (dimes*.1))/.05);
   let pennies = Math.floor((amount - (quarters*.25) - (dimes*.1) - (nickels*.05))/.01);
-  coins = Math.floor(quarters + dimes + nickels + pennies)
+  amount = Math.floor(quarters + dimes + nickels + pennies)
   let exercise10 = document.getElementById("output10")
-  exercise10.innerHTML = coins + " coins."
+  exercise10.innerHTML = amount + " coins."
 
   ////////////////////////// DO NOT MODIFY
   check("change", input); // DO NOT MODIFY
